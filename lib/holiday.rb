@@ -91,17 +91,9 @@ def all_supplies_in_holidays(holiday_hash)
           #join the array together making it a string
           holiday_string = holiday_array.join
           #print the string in the proper format
-          print{"  #{holiday_string}: "}
+          puts "  #{holiday_string}: #{supply.join(", ")}" 
+          
           #iterate thorugh array of supplies adding each supply to the holiday list line
-          i=supplies.length
-          while i>=0
-            if i>=1
-              print "#{supplies[i]}, "
-              i= i - 1
-            else
-              print "#{supplies[i]}"
-              i-=1
-            end
           end
       end
   end
