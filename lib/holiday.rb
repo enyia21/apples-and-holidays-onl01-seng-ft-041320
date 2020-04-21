@@ -69,6 +69,26 @@ def all_supplies_in_holidays(holiday_hash)
       season_holder = season.to_s
       season_holder.capitalize!
       puts "#{season_holder}:"
+      #iterate through the holidays
+      holidays.each do|holiday, supplies|
+          holiday_string = ""
+          holiday_string = holiday.to_s
+          holiday_string.capitalize!
+          #change the string to an array
+          holiday_string.split
+          #loop over the array change "_" to " " and captialize the next letter in the array
+          i=0
+          while(i<holiday_string.length)
+            if holiday_string[i] == "_"
+              holiday_string[i+1].capitalize!
+              holiday_string[i] = " "
+            end
+          end
+          #join the array together making it a string
+          holiday_string.join
+          print{"#{holiday_string}"}
+          #print the string in the proper format
+      end
       binding.pry
   end
 end
