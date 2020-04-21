@@ -86,10 +86,10 @@ def all_supplies_in_holidays(holiday_hash)
           end
           #join the array together making it a string
           holiday_string.join
-          print{"#{holiday_string}"}
           #print the string in the proper format
+          print{"#{holiday_string}: "}
+          binding.pry
       end
-      binding.pry
   end
 end
 def all_holidays_with_bbq(holiday_hash)
