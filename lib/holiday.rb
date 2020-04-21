@@ -75,7 +75,8 @@ def all_supplies_in_holidays(holiday_hash)
           holiday_string = holiday.to_s
           holiday_string.capitalize!
           #change the string to an array
-          holiday_string.to_a
+          holiday_array = []
+          holiday_array << holiday_string.split("")
           binding.pry
           #loop over the array change "_" to " " and captialize the next letter in the array
           i=0
