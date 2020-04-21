@@ -102,8 +102,8 @@ def all_supplies_in_holidays(holiday_hash)
               puts "#{supplies[i]}"
               i-=1
             end
+            binding.pry
           end
-          binding.pry
       end
   end
 end
