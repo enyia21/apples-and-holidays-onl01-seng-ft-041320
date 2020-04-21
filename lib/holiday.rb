@@ -62,41 +62,16 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  holiday_hash.each do|season, holidays|
-      season_holder = ""
-      season_holder = season.to_s.capitalize
-      puts "#{season_holder}:"
-        holidays.each do|holiday, supplies|
-          holiday_holder = ""
-          #Capitalize the first letter in the holiday key value
-          holiday_holder = holiday.to_s.capitalize
-          holiday_holder.to_a
-          i=0
-          while i<holiday_holder.length
-            if holiday_holder[i] == "_"
-              #Captializes any extra words after holiday key value based on current implementation.
-              holiday_holder[i+1].capitalize!
-              holiday_holder[i] = " "
-              i+=1
-            else
-              i+=1
-            end
-          end
-          holiday_holder.join
-          print{"  #{holiday_holder}: "}
-          supplies.each do|supply|
-            supply.capitalize!
-            if (supplies[0] == supply)
-              print "#{supply}, "
-            else
-              print "#{supply}"
-            end
-          end
-        end
 
-    end
+  #iterated through the hash and print out the season
+  holiday_hash each do|season holidays|
+       season.capitalize!
+       puts "#{season}:"
+       binding.pry
+       
+    
+  end
 end
-
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
