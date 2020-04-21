@@ -82,6 +82,9 @@ def all_supplies_in_holidays(holiday_hash)
             if holiday_string[i] == "_"
               holiday_string[i+1].capitalize!
               holiday_string[i] = " "
+              i+=1
+            else
+              i+=1
             end
           end
           #join the array together making it a string
