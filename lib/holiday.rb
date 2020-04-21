@@ -95,7 +95,7 @@ def all_supplies_in_holidays(holiday_hash)
           #iterate thorugh array of supplies adding each supply to the holiday list line
           i=supplies.length
           while i>=0
-            if i>=1 
+            if i>=1
               print "#{supplies[i], }"
               i-=1
             else
