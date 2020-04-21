@@ -91,8 +91,8 @@ def all_supplies_in_holidays(holiday_hash)
           #join the array together making it a string
           holiday_string = holiday_array.join
           #print the string in the proper format
-          puts "  #{holiday_string}: #{supply.join(", ")}" 
-          
+          puts "  #{holiday_string}: #{supply.join(", ")}"
+
           #iterate thorugh array of supplies adding each supply to the holiday list line
           end
       end
