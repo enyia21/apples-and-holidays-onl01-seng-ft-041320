@@ -90,9 +90,20 @@ def all_supplies_in_holidays(holiday_hash)
           end
           #join the array together making it a string
           holiday_string = holiday_array.join
-          binding.pry
           #print the string in the proper format
-          print{"#{holiday_string}: "}
+          print{"  #{holiday_string}: "}
+          #iterate thorugh array of supplies adding each supply to the holiday list line
+          i=supplies.length
+          while i>=0
+            if i>=1 
+              print "#{supplies[i], }"
+              i-=1
+            else
+              puts "#{supplies[i]}"
+              i-=1
+            end
+          end
+          binding.pry
       end
   end
 end
