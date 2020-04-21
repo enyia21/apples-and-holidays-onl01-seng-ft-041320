@@ -97,7 +97,7 @@ def all_supplies_in_holidays(holiday_hash)
           while i>=0
             if i>=1
               print "#{supplies[i]}, "
-              i-=1
+              i= i - 1
             else
               puts "#{supplies[i]}"
               i-=1
