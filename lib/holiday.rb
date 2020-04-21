@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
       season_holder = season.to_s
       season_holder.capitalize!
       puts "#{season_holder}:"
-
+      binding.pry
   end
 end
 def all_holidays_with_bbq(holiday_hash)
